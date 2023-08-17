@@ -1,33 +1,10 @@
-import java.util.Scanner;
+package main;
+// import java.util.Scanner;
 
 public class App {
   public static void main(String[] args) throws Exception {
-   
-    int grundbetrag;
-    double zinssatz;
-    int jahre;
-    double endbetrag;
 
-    System.out.println("geben hier dein Grundbetrag ein");
-
-    Scanner userGrundBetrag= new Scanner(System.in);
-    grundbetrag=userGrundBetrag.nextInt();
-
-    System.out.println("geben hier dein Zinssatz ein");
-
-    Scanner userZinssatz= new Scanner(System.in);
-    zinssatz=userZinssatz.nextDouble();
-
-    System.out.println("geben hier die Jahre ein");
-
-    Scanner userWantedYears= new Scanner(System.in);
-    jahre=userWantedYears.nextInt();
-
-    
-    endbetrag=grundbetrag*(Math.pow((1+zinssatz/100),jahre));
-    System.out.printf("Dein Endbetrag ist: %2.2f" + endbetrag);
-
-
+  
 
     
  
@@ -37,6 +14,54 @@ public class App {
   
   
 }
+
+
+// int zähler =0;
+
+//  while (zähler < 5) {
+//   System.out.println(" Zähler ist kleiner als vier");
+//   System.out.println("Der zurzeitige stand ist: " + zähler);
+//   zähler++;
+  
+//  }
+
+
+ // int number=56;
+   
+    // switch (number) {
+    //   case 3:
+
+    //   System.out.println("This is the right answer");
+    //     break;
+    
+    //   default: System.out.println("The number isnt right");
+    //     break;
+    // }
+
+// int grundbetrag;
+    // double zinssatz;
+    // int jahre;
+    // double endbetrag;
+
+    // System.out.println("geben hier dein Grundbetrag ein");
+
+    // Scanner userGrundBetrag= new Scanner(System.in);
+    // grundbetrag=userGrundBetrag.nextInt();
+
+    // System.out.println("geben hier dein Zinssatz ein");
+
+    // Scanner userZinssatz= new Scanner(System.in);
+    // zinssatz=userZinssatz.nextDouble();
+
+    // System.out.println("geben hier die Jahre ein");
+
+    // Scanner userWantedYears= new Scanner(System.in);
+    // jahre=userWantedYears.nextInt();
+
+    
+    // endbetrag=grundbetrag*(Math.pow((1+zinssatz/100),jahre));
+    // System.out.printf("Dein Endbetrag ist: %2.2f" + endbetrag);
+
 
 
 
