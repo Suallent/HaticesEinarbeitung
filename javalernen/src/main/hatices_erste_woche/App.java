@@ -1,19 +1,33 @@
 package main.hatices_erste_woche;
-// import java.util.Scanner;
+import java.util.Scanner;
+
 
 public class App {
   public static void main(String[] args) throws Exception {
+    System.out.println("Geben Sie alle Noten der Schüler an. Bei der Eingabe Null wird die note ausgerechnet");
+    int grade;
+    int anzahl=0;
+    double averageGrade=0;
+    Scanner studentsGrade = new Scanner(System.in);
+    grade=studentsGrade.nextInt();
 
-  
-
-    
- 
-
-  }
-
-  
-  
-}
+    while(grade != 0){
+      System.out.println("Geben Sie alle Noten der Schüler an. Bei der Eingabe Null wird die note ausgerechnet");
+      grade=studentsGrade.nextInt();
+      if(grade < 0 || grade > 6){
+        System.out.println("Please enter a number between 0 and 6. With the number Zero (0) you can calculate the average grade");
+        grade=studentsGrade.nextInt();
+        anzahl--;
+      }
+      anzahl++;
+      averageGrade += grade ;
+      if(grade == 0){
+        
+        System.out.println("The average grade egauls: " + averageGrade / anzahl);
+      }
+      
+    }
+}}
 
 
 // int zähler =0;
