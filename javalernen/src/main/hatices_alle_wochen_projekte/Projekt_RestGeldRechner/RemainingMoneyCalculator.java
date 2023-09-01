@@ -1,4 +1,4 @@
-package main.hatices_zweite_woche.Projekt_RestGeldRechner;
+package main.hatices_alle_wochen_projekte.Projekt_RestGeldRechner;
 
 import java.util.Scanner;
 
